@@ -63,19 +63,19 @@ def get_pie_chart(entered_site):
         return fig
     elif entered_site == 'CCAFS LC-40':
         filtered_df = spacex_df[spacex_df['Launch Site']=='CCAFS LC-40']
-        fig = px.pie(filtered_df,values='class', names = 'Launch Site', title='Launch sites and success rates')
+        fig = px.pie(filtered_df,names = 'class', title='Launch sites and success rates')
         return fig
     elif entered_site == 'VAFB SLC-4E':
         filtered_df = spacex_df[spacex_df['Launch Site']=='VAFB SLC-4E']
-        fig = px.pie(filtered_df,values='class', names = 'Launch Site', title='Launch sites and success rates')
+        fig = px.pie(filtered_df,names = 'class', title='Launch sites and success rates')
         return fig
     elif entered_site == 'KSC LC-39A':
         filtered_df = spacex_df[spacex_df['Launch Site']=='KSC LC-39A']
-        fig = px.pie(filtered_df,values='class', names = 'Launch Site', title='Launch sites and success rates')
+        fig = px.pie(filtered_df,names = 'class', title='Launch sites and success rates')
         return fig
     elif entered_site == 'CCAFS SLC-40':
         filtered_df = spacex_df[spacex_df['Launch Site']=='CCAFS SLC-40']
-        fig = px.pie(filtered_df,values='class', names = 'Launch Site', title='Launch sites and success rates')
+        fig = px.pie(filtered_df,names = 'class', title='Launch sites and success rates')
         return fig
     else:
         return None
